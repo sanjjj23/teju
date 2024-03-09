@@ -1,0 +1,105 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+git init
+git add your_new_file.txt
+git commit -m "Initial commit - adding a new file"
+git branch feature-branch
+git checkout -b feature-branch
+git checkout master
+git branch -d feature-branch
+git stash save "Your stash message"
+git stash apply
+git stash apply stash@{1}
+git stash drop
+git stash pop
+git stash drop stash@{1}
+git clone <repository_url>
+git clone https://github.com/example/repo.git (public)
+git clone git@github.com:example/repo.git
+git fetch
+git rebase origin/your-branch
+git rebase -i origin/your-branch
+git rebase --continue
+git rebase --abort
+git push origin your-branch --force
+git merge feature-branch -m "Your custom commit message"
+git merge --continue
+git merge feature-branch --no-ff -e
+git tag v1.0 <commit_hash>
+git tag v1.0 HEAD
+git push origin v1.0
+git cherry-pick <start-commit>^..<end-commit>
+git cherry-pick A^..B
+git cherry-pick --continue
+git cherry-pick --abort
+git show <commit-id>
+git show abc123
+git log -n 1 --pretty=format:"%h - %an, %ar : %s" <commit-id>
+git log --author="JohnDoe" --since="2023-01-01" --until="2023-12-31"
+git log -n 5
+git log -n 5 --oneline
+git revert abc123
+git reset --hard abc123
